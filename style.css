@@ -133,12 +133,14 @@ a {
   border-radius: 100px;
   gap: 13px;
   align-items: center;
-  padding-top: 4px;
-  padding-right: 15px;
+  padding-right: 20px;
   padding-bottom: 4px;
-  padding-left: 15px;
+  padding-left: 20px;
+  padding-top: 4px;
   display: flex;
   flex: 1;
+
+  max-height: 48px;
 }
 .secondheader-search {
   border: 1px solid #d86752;
@@ -148,6 +150,10 @@ a {
   padding-right: 32px;
   padding-bottom: 14px;
   padding-left: 32px;
+  max-height: 48px;
+}
+.secondheader-closebutton {
+  align-self: center;
 }
 .secondheader-searchbar input {
   background-color: transparent;
@@ -166,8 +172,10 @@ a {
 }
 .secondheader-searchbar {
   flex: 1;
+  margin-right: 80px;
   gap: 24px;
-  display: flex;
+  display: none;
+  opacity: 0;
 }
 .secondheader-search p {
   color: #d86752;
