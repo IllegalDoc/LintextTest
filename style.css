@@ -172,6 +172,7 @@ a {
   font-size: 16px;
   line-height: 18px;
   letter-spacing: 0%;
+  overflow: hidden;
 
   vertical-align: middle;
 }
@@ -270,6 +271,7 @@ a {
   display: none;
 }
 .secondheader-menu ul {
+  font-family: "agrandirtight";
   color: #0d384a;
   display: flex;
   flex-direction: column;
@@ -294,6 +296,9 @@ a {
 }
 
 @media (max-width: 1005px) {
+  .secondheader-flex {
+    min-height: 77px;
+  }
   .secondheader-navbar {
     flex-wrap: wrap;
   }
@@ -316,9 +321,36 @@ a {
     justify-content: flex-end;
   }
 }
+@media (max-width: 768px) {
+  .secondheader-getaquote {
+    display: none;
+  }
+  .secondheader-rightside {
+    flex: 0.7;
+    margin-right: 0;
+  }
+}
+@media (max-width: 574px) {
+  .secondheader-search {
+    padding-right: 12px;
+
+    padding-left: 12px;
+  }
+  .secondheader-search p {
+    font-size: 0.75rem;
+  }
+  .secondheader-searchbar {
+    margin-left: 0;
+    margin-right: 0;
+    gap: 12px;
+  }
+}
 
 @media (max-width: 500px) {
   .firstheader-rightside {
     gap: 10px;
+  }
+  .secondheader-input {
+    gap: 0;
   }
 }

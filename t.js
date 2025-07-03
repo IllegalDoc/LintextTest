@@ -2,7 +2,9 @@ document
   .querySelector(".secondheader-searchlogo")
   .addEventListener("click", (e) => {
     if (parseInt(window.innerWidth) < 987) {
+      document.querySelector(".searchbar-logo").style.display = "none";
       document.querySelector(".secondheader-menulogo").style.display = "none";
+      console.log("its on");
     }
     document.querySelector(".secondheader-leftside").style.display = "none";
     document.querySelector(".secondheader-rightside").style.display = "none";
@@ -22,6 +24,7 @@ document
   .addEventListener("click", (e) => {
     if (parseInt(window.innerWidth) < 987) {
       document.querySelector(".secondheader-menulogo").style.display = "flex";
+      console.log("ca marche");
     }
     document.querySelector(".secondheader-leftside").style.display = "flex";
     document.querySelector(".secondheader-rightside").style.display = "flex";
@@ -62,7 +65,8 @@ window.addEventListener("resize", (e) => {
   } else {
     if (
       document.querySelector(".secondheader-searchbar").style.display === "none"
-    )
+    ) {
       document.querySelector(".secondheader-menulogo").style.display = "flex";
+    }
   }
 });
