@@ -56,7 +56,13 @@ window.addEventListener("resize", (e) => {
   if (parseInt(window.innerWidth) > 987) {
     document.querySelector(".secondheader-menulogo").style.display = "none";
     document.querySelector(".secondheader-menu").classList.remove("open");
+    document
+      .querySelector(".secondheader-menulogo img ")
+      .setAttribute("src", "images/hamburger.svg");
   } else {
-    document.querySelector(".secondheader-menulogo").style.display = "flex";
+    if (
+      document.querySelector(".secondheader-searchbar").style.display === "none"
+    )
+      document.querySelector(".secondheader-menulogo").style.display = "flex";
   }
 });
