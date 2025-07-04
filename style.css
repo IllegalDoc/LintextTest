@@ -294,12 +294,15 @@ a {
   pointer-events: auto;
   transform: translateX(0);
 }
-
+.atouchofclass {
+  position: relative;
+}
 .touchclass-flex {
+  overflow: hidden;
   display: flex;
   position: relative;
   background-color: #ede6db;
-  z-index: -3;
+  z-index: 1;
 }
 .touchclass-title h1 {
   font-family: "agrandirgrand_heavy";
@@ -310,9 +313,13 @@ a {
   vertical-align: middle;
   color: #1a3748;
 }
+.touchclass-text {
+  width: 50%;
+}
 .touchclass-text p {
   font-size: 1.125rem;
   line-height: 28px;
+
   vertical-align: middle;
   color: #1a3748;
 }
@@ -322,6 +329,8 @@ a {
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
+  z-index: 999;
+  position: relative;
 }
 #dot {
   font-family: "agrandirgrand_heavy";
@@ -377,6 +386,9 @@ a {
 }
 
 @media (max-width: 1005px) {
+  .touchclass-text {
+    width: auto;
+  }
   .touchclass-content {
     padding: 57px 43px;
   }
@@ -396,6 +408,11 @@ a {
 }
 
 @media (max-width: 986px) {
+  .touchclass-picture img {
+    scale: 1.5;
+    transform: translate(-69px, 61px);
+    width: 100%;
+  }
   .firstheader-logo {
     justify-content: flex-start;
   }
@@ -416,6 +433,17 @@ a {
   }
 }
 @media (max-width: 768px) {
+  .touchclass-title h1 {
+    font-size: 3.5rem;
+  }
+  .touchclass-text p {
+    font-size: 1rem;
+  }
+  .touchclass-picture img {
+    scale: 2.1;
+    transform: translate(-107px, 56px);
+    width: 100%;
+  }
   .secondheader-getaquote {
     display: none;
   }
@@ -425,6 +453,9 @@ a {
   }
 }
 @media (max-width: 574px) {
+  .touchclass-title h1 {
+    font-size: 3rem;
+  }
   .secondheader-search {
     padding-right: 12px;
 
@@ -441,6 +472,11 @@ a {
 }
 
 @media (max-width: 500px) {
+  .touchclass-picture img {
+    scale: 3.2;
+    transform: translate(-79px, 42px);
+    width: 100%;
+  }
   .firstheader-rightside {
     gap: 10px;
   }
