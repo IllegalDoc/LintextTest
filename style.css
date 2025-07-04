@@ -434,6 +434,7 @@ a {
   flex-direction: column;
 }
 .atlin-elements {
+  max-width: 73%;
   display: grid;
   grid-template-columns: 0.7fr 1fr 1fr 0.9fr 1fr;
   gap: 40px;
@@ -458,6 +459,7 @@ a {
   border-radius: 32px;
   gap: 4px;
   max-width: 140px;
+  text-wrap: nowrap;
   max-height: 132px;
 }
 .element-2 {
