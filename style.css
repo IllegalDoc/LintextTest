@@ -317,6 +317,9 @@ a {
     height: 24px;
     align-self: center;
   }
+  .searchbar-logo {
+    display: none;
+  }
   .secondheader-leftside {
     justify-content: flex-end;
   }
@@ -352,5 +355,15 @@ a {
   }
   .secondheader-input {
     gap: 0;
+  }
+  .secondheader-searchbar input {
+    width: 30%;
+  }
+  .firstheader-rightside a {
+    font-size: 0.7rem;
+  }
+  .firstheader-logo img {
+    width: 70px;
+    height: 15px;
   }
 }
