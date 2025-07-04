@@ -453,9 +453,6 @@ a {
   }
 }
 @media (max-width: 574px) {
-  .touchclass-title h1 {
-    font-size: 3rem;
-  }
   .secondheader-search {
     padding-right: 12px;
 
@@ -472,8 +469,25 @@ a {
 }
 
 @media (max-width: 500px) {
+  .touchclass-title h1 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+  .touchclass-button {
+    padding-right: 43px;
+
+    padding-left: 34px;
+  }
+
+  .touchclass-button p {
+    font-size: 0.8rem;
+  }
+  #dot {
+    font-size: 3rem;
+    transform: translate(27px, -8px);
+  }
   .touchclass-picture img {
-    scale: 3.2;
+    scale: 2.6;
     transform: translate(-79px, 42px);
     width: 100%;
   }
