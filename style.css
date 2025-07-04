@@ -297,7 +297,9 @@ a {
 
 .touchclass-flex {
   display: flex;
+  position: relative;
   background-color: #ede6db;
+  z-index: -3;
 }
 .touchclass-title h1 {
   font-family: "agrandirgrand_heavy";
@@ -316,7 +318,6 @@ a {
 }
 .touchclass-content {
   padding: 184px 80px;
-  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -335,6 +336,14 @@ a {
 .touchclass-button:hover p:not(#dot) {
   transform: translateX(-15px);
 }
+.touchclass-picture {
+  position: absolute;
+  z-index: -1;
+}
+.touchclass-picture img {
+  width: 100%;
+}
+
 .touchclass-button {
   display: flex;
   margin-top: 20px;
@@ -346,6 +355,7 @@ a {
   border-radius: 100px;
   background-color: #d86752;
 }
+
 .touchclass-button p {
   transform: translateX(0);
   transition: transform 0.3s ease-in-out;
@@ -359,7 +369,24 @@ a {
   vertical-align: middle;
   text-transform: uppercase;
 }
+
+@media (max-width: 1200px) {
+  .touchclass-content {
+    padding: 105px 43px;
+  }
+}
+
 @media (max-width: 1005px) {
+  .touchclass-content {
+    padding: 57px 43px;
+  }
+  .touchclass-title h1 {
+    font-size: 4.25rem;
+    line-height: 77px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #1a3748;
+  }
   .secondheader-flex {
     min-height: 77px;
   }
