@@ -295,6 +295,70 @@ a {
   transform: translateX(0);
 }
 
+.touchclass-flex {
+  display: flex;
+  background-color: #ede6db;
+}
+.touchclass-title h1 {
+  font-family: "agrandirgrand_heavy";
+  font-weight: 800;
+  font-size: 5.5rem;
+  line-height: 96px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #1a3748;
+}
+.touchclass-text p {
+  font-size: 1.125rem;
+  line-height: 28px;
+  vertical-align: middle;
+  color: #1a3748;
+}
+.touchclass-content {
+  padding: 184px 80px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+#dot {
+  font-family: "agrandirgrand_heavy";
+  font-size: 4.5rem;
+  transform: translate(27px, -11px);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.touchclass-button:hover #dot {
+  opacity: 1;
+}
+.touchclass-button:hover p:not(#dot) {
+  transform: translateX(-15px);
+}
+.touchclass-button {
+  display: flex;
+  margin-top: 20px;
+  opacity: 1;
+  padding-top: 16px;
+  padding-right: 48px;
+  padding-bottom: 16px;
+  padding-left: 48px;
+  border-radius: 100px;
+  background-color: #d86752;
+}
+.touchclass-button p {
+  transform: translateX(0);
+  transition: transform 0.3s ease-in-out;
+  color: #fff;
+  font-weight: 800;
+  font-family: "agrandirgrand_heavy";
+  font-size: 1.125rem;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
 @media (max-width: 1005px) {
   .secondheader-flex {
     min-height: 77px;
@@ -365,5 +429,8 @@ a {
   .firstheader-logo img {
     width: 70px;
     height: 15px;
+  }
+  .firstheader-rightside {
+    margin-right: 10px;
   }
 }
