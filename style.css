@@ -364,6 +364,22 @@ a {
   border-radius: 100px;
   background-color: #d86752;
 }
+.atlin-upside {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.atlin-flex {
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  gap: 190px;
+}
+.atlin-elements > *:hover .element-logo img {
+  transform: scale(1.1);
+}
 
 .touchclass-button p {
   transform: translateX(0);
@@ -378,7 +394,108 @@ a {
   vertical-align: middle;
   text-transform: uppercase;
 }
-
+.atlin-title h1 {
+  color: #fff;
+  font-weight: 800;
+  font-family: "agrandirgrand_heavy";
+  font-size: 52px;
+  line-height: 4.25rem;
+  letter-spacing: 0%;
+  text-align: right;
+  vertical-align: middle;
+}
+.atlin-logo {
+  align-self: flex-end;
+}
+.atlin-logo img {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(242deg)
+    brightness(125%) contrast(104%);
+  width: 203px;
+  height: 114px;
+}
+.atlintext {
+  overflow: hidden;
+  position: relative;
+}
+.atlin-picture {
+  scale: 1.1;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  filter: brightness(80%);
+}
+.atlin-picture img {
+  width: 100%;
+  object-fit: contain;
+}
+.atlin-elements > * {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.atlin-elements {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr 1fr 0.9fr 1fr;
+  gap: 40px;
+}
+.element-logo {
+  width: 68px;
+  height: 68px;
+}
+.element-title {
+  color: white;
+  font-size: 0.938rem;
+  line-height: 1.25rem;
+}
+.element-logo img {
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+.element-1 {
+  background-color: #0d384a;
+  padding: 20px;
+  border-radius: 32px;
+  gap: 4px;
+  max-width: 140px;
+  max-height: 132px;
+}
+.element-2 {
+  background-color: #0d384a;
+  padding: 20px;
+  border-radius: 32px;
+  gap: 4px;
+  max-width: 180px;
+  max-height: 132px;
+  text-wrap: nowrap;
+}
+.element-3 {
+  background-color: #0d384a;
+  padding: 20px;
+  border-radius: 32px;
+  gap: 4px;
+  max-width: 191px;
+  max-height: 132px;
+  text-wrap: nowrap;
+}
+.element-4 {
+  background-color: #0d384a;
+  padding: 20px;
+  border-radius: 32px;
+  gap: 4px;
+  max-width: 164px;
+  max-height: 132px;
+  text-wrap: nowrap;
+}
+.element-5 {
+  background-color: #0d384a;
+  padding: 20px;
+  border-radius: 32px;
+  gap: 4px;
+  max-width: 208px;
+  max-height: 132px;
+  text-wrap: nowrap;
+}
 @media (max-width: 1200px) {
   .touchclass-content {
     padding: 105px 43px;
