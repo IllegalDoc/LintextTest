@@ -418,15 +418,18 @@ a {
   position: relative;
 }
 .atlin-picture {
-  scale: 1.1;
   width: 100%;
   position: absolute;
+  height: 100%;
   z-index: -1;
   filter: brightness(80%);
 }
 .atlin-picture img {
+  scale: 1.1;
+  display: block;
   width: 100%;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
 }
 .atlin-elements > * {
   align-items: center;
@@ -434,9 +437,10 @@ a {
   flex-direction: column;
 }
 .atlin-elements {
-  max-width: 73%;
-  display: grid;
-  grid-template-columns: 0.7fr 1fr 1fr 0.9fr 1fr;
+  min-width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+
   gap: 40px;
 }
 .element-logo {
@@ -527,6 +531,12 @@ a {
 }
 
 @media (max-width: 986px) {
+  .atlin-elements {
+  }
+  .atlin-title h1 {
+    font-size: 2.625rem;
+  }
+
   .touchclass-picture img {
     scale: 1.5;
     transform: translate(-69px, 61px);
@@ -552,6 +562,10 @@ a {
   }
 }
 @media (max-width: 768px) {
+  .atlin-title h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
   .touchclass-title h1 {
     font-size: 3.5rem;
   }
@@ -572,6 +586,20 @@ a {
   }
 }
 @media (max-width: 574px) {
+  .atlin-flex {
+    gap: 50px;
+  }
+  .atlin-elements {
+    justify-content: center;
+  }
+  .atlin-logo {
+    align-self: center;
+  }
+  .atlin-title h1 {
+    text-wrap: balance;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
   .secondheader-search {
     padding-right: 12px;
 
