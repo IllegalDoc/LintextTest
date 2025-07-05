@@ -4,7 +4,6 @@ document
     if (parseInt(window.innerWidth) < 987) {
       document.querySelector(".searchbar-logo").style.display = "none";
       document.querySelector(".secondheader-menulogo").style.display = "none";
-      console.log("its on");
     }
     document.querySelector(".secondheader-leftside").style.display = "none";
     document.querySelector(".secondheader-rightside").style.display = "none";
@@ -46,6 +45,7 @@ hamburger.addEventListener("click", (e) => {
     document
       .querySelector(".secondheader-menulogo img ")
       .setAttribute("src", "images/hamburger.svg");
+    unlockScroll();
   }
 });
 function lockScroll() {
