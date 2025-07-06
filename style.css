@@ -550,6 +550,16 @@ a {
   max-height: 132px;
   text-wrap: nowrap;
 }
+.empty-image {
+  width: 100%;
+  height: 110svh;
+}
+.empty-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 @media (max-width: 1200px) {
   .touchclass-content {
     padding: 105px 43px;
