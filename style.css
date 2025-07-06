@@ -679,11 +679,17 @@ a {
 }
 
 @media (max-width: 986px) {
+  .bestsellers-description {
+    width: 67%;
+  }
   .ourmission-flex {
     padding: 40px 40px;
   }
+  .ourmission-text {
+    align-self: center;
+  }
   .ourmission-picture {
-    width: 68%;
+    width: 100%;
   }
 
   .ourmission-flex {
@@ -719,6 +725,9 @@ a {
   }
 }
 @media (max-width: 768px) {
+  .bestsellers-title h1 {
+    font-size: 2.5rem;
+  }
   .atlin-title h1 {
     font-size: 2rem;
     line-height: 2.5rem;
@@ -773,6 +782,20 @@ a {
 }
 
 @media (max-width: 500px) {
+  .bestsellers-title {
+    align-self: center;
+  }
+  .bestsellers-description {
+    text-wrap: pretty;
+    align-self: center;
+  }
+  .bestsellers-title h1 {
+    font-size: 1.8rem;
+  }
+  .bestsellers-description p {
+    font-size: 15px;
+  }
+
   .ourmission-text {
     align-self: initial;
 

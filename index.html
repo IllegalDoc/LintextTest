@@ -7,7 +7,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css"
     />
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+
     <link rel="stylesheet" href="style.css" />
     <title>Lintext</title>
   </head>
@@ -673,14 +673,25 @@
         </div>
       </div>
     </section>
-
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
     <script src="t.js"></script>
 
     <script>
-      new Glide(".glide", {
-        type: "carousel",
-        startAt: 0,
-        perView: 3,
+      document.addEventListener("DOMContentLoaded", () => {
+        new Glide(".glide", {
+          type: "carousel", // or 'slider'
+          perView: 4,
+
+          autoplay: 5000,
+          hoverpause: true,
+          breakpoints: {
+            1024: { perView: 3 },
+
+            768: { perView: 2 },
+
+            500: { perView: 1 },
+          },
+        }).mount();
       });
     </script>
   </body>
