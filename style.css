@@ -722,6 +722,7 @@ a {
   text-transform: uppercase;
 }
 .experience-text p {
+  color: #1a3748;
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0%;
@@ -820,13 +821,19 @@ a {
   }
 }
 @media (max-width: 768px) {
+  .experience-content {
+    width: 95%;
+  }
+  .experience-text p {
+    font-size: 14px;
+  }
   .experience-button {
     padding-right: 30px;
     padding-left: 30px;
   }
   .experience-title h1 {
-    font-size: 28px;
-    line-height: 45px;
+    font-size: 25px;
+    line-height: 34px;
   }
   .bestsellers-title h1 {
     font-size: 2.5rem;
@@ -885,6 +892,26 @@ a {
 }
 
 @media (max-width: 500px) {
+  .experience-button {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .experience-title h1 {
+    font-size: 22px;
+    line-height: 31px;
+  }
+  .experience-text p {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 600;
+  }
+  .experience-content {
+    width: 95%;
+    padding-top: 70px;
+    padding-bottom: 80px;
+    padding-left: 0;
+    padding-right: 60px;
+  }
   .bestsellers-title {
     align-self: center;
   }
@@ -929,7 +956,7 @@ a {
   }
   #dot {
     font-size: 3rem;
-    transform: translate(27px, -8px);
+    transform: translate(10px, -10px);
   }
   .touchclass-picture img {
     scale: 2.6;
