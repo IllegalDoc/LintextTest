@@ -734,6 +734,112 @@ a {
 .experience-button:hover #dot {
   opacity: 1;
 }
+.footer-flex {
+  display: flex;
+  padding: 80px;
+  background-color: #1a3748;
+}
+.footer-left {
+  flex: 1;
+  flex-direction: column;
+  display: flex;
+  gap: 130px;
+}
+.footer-title h1 {
+  font-family: "agrandirgrand_heavy";
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 44px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #fff;
+}
+.footer-right {
+  flex-direction: column;
+  display: flex;
+  flex: 1;
+  gap: 80px;
+}
+.footer-right ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.right-up {
+  display: flex;
+}
+.right-up > * {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer-logo {
+  max-height: 56px;
+  max-width: 128px;
+}
+.footer-logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(242deg)
+    brightness(125%) contrast(104%);
+}
+.footer-subscribe {
+  background-color: #fff;
+  max-width: 451px;
+  max-height: 56px;
+  display: flex;
+  border-radius: 100px;
+  justify-content: space-between;
+  padding: 4px;
+  align-items: center;
+}
+.footer-subscribe input {
+  text-align: center;
+  border-radius: 100px;
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+.footer-subscribe input::placeholder {
+  font-family: "agrandirwide_light";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #073b43;
+}
+.subscribe-button p {
+  font-family: "agrandirgrand_heavy";
+
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #fff;
+}
+.subscribe-button {
+  display: flex;
+  align-self: flex-end;
+  max-width: 188px;
+  max-height: 48px;
+  opacity: 1;
+  border-radius: 100px;
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  background-color: #d86752;
+}
+
+.left-up {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
 @media (max-width: 1200px) {
   .experience-title h1 {
     text-wrap: nowrap;
