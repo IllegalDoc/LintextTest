@@ -786,6 +786,7 @@ a {
     brightness(125%) contrast(104%);
 }
 .footer-subscribe {
+  overflow: hidden;
   background-color: #fff;
   max-width: 451px;
   max-height: 56px;
@@ -794,6 +795,7 @@ a {
   justify-content: space-between;
   padding: 4px;
   align-items: center;
+  min-width: 0;
 }
 .footer-subscribe input {
   text-align: center;
@@ -863,6 +865,7 @@ a {
   color: #fff;
 }
 .subscribe-button {
+  min-width: 0;
   display: flex;
   align-self: flex-end;
   max-width: 188px;
@@ -1060,10 +1063,14 @@ a {
 }
 
 @media (max-width: 500px) {
+  .footer-subscribe input {
+    width: 30%;
+  }
   .right-down {
     justify-content: center;
   }
   .right-up {
+    justify-content: center;
     gap: 20px;
   }
   .experience-button {
