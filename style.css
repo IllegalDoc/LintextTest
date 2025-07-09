@@ -1063,8 +1063,19 @@ a {
 }
 
 @media (max-width: 500px) {
+  .subscribe-button {
+    transform: translate(-26px, 70px);
+
+    min-width: none;
+  }
+  .footer-subscribe {
+    overflow: visible;
+  }
+  .footer-subscribe input::placeholder {
+    text-align: center;
+  }
   .footer-subscribe input {
-    width: 30%;
+    width: 62px;
   }
   .right-down {
     justify-content: center;
