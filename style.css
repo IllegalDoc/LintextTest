@@ -819,6 +819,7 @@ a {
 .copyright {
   color: #ffffff;
   text-align: end;
+  opacity: 0.5;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -915,6 +916,27 @@ a {
 }
 
 @media (max-width: 986px) {
+  .footer-flex {
+    flex-direction: column;
+    gap: 100px;
+  }
+  .left-down {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-logo {
+    max-height: 60px;
+    max-width: 170px;
+  }
+  .right-up {
+    flex-direction: row-reverse;
+  }
+
+  .footer-left {
+    align-items: center;
+  }
+
   .experience-text p {
     font-size: 16px;
   }
@@ -1038,9 +1060,21 @@ a {
 }
 
 @media (max-width: 500px) {
+  .right-down {
+    justify-content: center;
+  }
+  .right-up {
+    gap: 20px;
+  }
   .experience-button {
     padding-right: 20px;
     padding-left: 20px;
+  }
+  .copyright {
+    text-align: center;
+  }
+  .footer-title h1 {
+    font-size: 20px;
   }
   .experience-title h1 {
     font-size: 22px;
